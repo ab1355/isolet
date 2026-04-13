@@ -12,7 +12,7 @@ Takes a component (React, Solid, Svelte, vanilla, anything) + its styles, bundle
 
 ## Architecture
 
-- pnpm monorepo with turbo for orchestration
+- bun monorepo with turbo for orchestration
 - vite-plus (`defineConfig` + `pack`) for building (tsdown under the hood)
 - css-text plugin converts `.css` imports to JS string exports for shadow DOM injection
 
@@ -41,7 +41,7 @@ isolet build --watch # watch mode
 
 ## Commands
 
-- `pnpm build`: build all packages
-- `pnpm dev`: dev mode with watch
-- `pnpm lint` / `pnpm format`: via vite-plus
-- `pnpm typecheck`: TypeScript checking
+- `bun run build`: build all packages
+- `bun run dev`: dev mode with watch
+- `bun run lint` / `bun run format`: via vite-plus
+- `bun run typecheck`: TypeScript checking

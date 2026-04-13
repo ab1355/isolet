@@ -9,7 +9,7 @@ Works with React, Solid, Svelte, vanilla JS, or anything that can render into a 
 ## Install
 
 ```sh
-npm install isolet-js
+bun add isolet-js
 ```
 
 ## Quick start
@@ -40,10 +40,10 @@ The component renders inside a shadow DOM by default. Styles are scoped. Nothing
 Distribute your component as a self-contained bundle. The CLI reads your config, resolves CSS + assets, and outputs a drop-in artifact.
 
 ```sh
-npx isolet-js init    # scaffold an isolet.config.ts
-npx isolet-js build   # bundle widget(s) from config
-npx isolet-js build --watch   # rebuild on changes
-npx isolet-js build --minify  # minified production build
+bunx isolet-js init    # scaffold an isolet.config.ts
+bunx isolet-js build   # bundle widget(s) from config
+bunx isolet-js build --watch   # rebuild on changes
+bunx isolet-js build --minify  # minified production build
 ```
 
 ### Config

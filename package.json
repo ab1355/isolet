@@ -17,7 +17,7 @@
     "check": "vp check",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "pnpm build && changeset publish"
+    "release": "bun run build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.30.0",
@@ -28,18 +28,11 @@
     "vite-plus": "^0.1.12"
   },
   "engines": {
-    "node": ">=22",
-    "pnpm": ">=8"
+    "bun": ">=1.2.9"
   },
-  "packageManager": "pnpm@10.24.0",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "unrs-resolver"
-    ],
-    "overrides": {
-      "vite": "npm:@voidzero-dev/vite-plus-core",
-      "vitest": "npm:@voidzero-dev/vite-plus-test"
-    }
+  "packageManager": "bun@1.2.9",
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core",
+    "vitest": "npm:@voidzero-dev/vite-plus-test"
   }
 }
